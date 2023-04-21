@@ -1,0 +1,35 @@
+### Git (sistema de versionamento de codigo distribuido)
+
+
+
+#### Alguns comandos:
+
+- git init = iniciar repositorio
+
+- git add "nome do arquivo" = coloca o arquivo em staged      *tem que estar em staged pra commitar*
+
+- git add * = coloca todos os arquivos em staged
+
+- git commit -m "mensagem do arquivo" = commita o arquivo
+
+- git status = ver o status do arquivo
+
+- git push origin master = commitar o diretorio no github
+
+- git pull origin master = puxa o arquivo e compara com o seu
+
+- touch - cria arquivo novo no diretorio
+
+- mkdir = criar diretorio
+
+- ls = list
+
+- cd .. = voltar 1 diretório
+
+- mv = mover
+
+  > ./ = dentro do repositorio que estamos
+  >
+  > arquivo .md = markdown
+  >
+  > flag "-a" = mostra arquivos ocultos
