@@ -28,6 +28,10 @@
 
 - mv = mover
 
+- git config --list = ver a lista de configs git
+
+- git remote add = crio uma branch
+
   > ./ = dentro do repositorio que estamos
   >
   > arquivo .md = markdown
