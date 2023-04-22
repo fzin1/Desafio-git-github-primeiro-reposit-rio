@@ -1,7 +1,7 @@
-Algoritmo "semnome"
+Algoritmo "produto10"
 // 
 //  
-// Descrição   : ler 10 numeros e calcular o produto entre eles
+// DescriÃ§Ã£o   : ler 10 numeros e calcular o produto entre eles
 // Autor(a)    : fabricio
 // Data atual  : 22/04/2023
 Var
@@ -11,7 +11,7 @@ Inicio
 
 produto <- 1
 
-para numero de 1 até 10 faça
+para numero de 1 atÃ© 10 faÃ§a
 leia (numero)
 
 produto <- produto * numero
