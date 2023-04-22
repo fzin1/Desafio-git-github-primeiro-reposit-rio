@@ -1,0 +1,8 @@
+
+console.log('') = imprimir texto 
+let = declara variavel
+const = declara constante
+
+atribuição = "="
+
+.tofixed() = arredonda o valor da variavel 
