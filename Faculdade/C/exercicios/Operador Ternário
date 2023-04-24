@@ -1,0 +1,7 @@
+Operador Ternário:
+
+simplificação de if/else 
+
+só funciona se tiver apenas uma condição para if/else
+
+(media>=7)? printf("aprovado\n\n"):printf("Reprovado\n\n");
