@@ -6,3 +6,9 @@ const = declara constante
 atribuição = "="
 
 .tofixed() = arredonda o valor da variavel 
+
+"=" = atribuição
+"==" = igualdade ignorando o tipo 
+"===" = igualdade mais usado
+alt + cima ou baixo = leva a seleção
+alt + shift + f = formata o codigo 
