@@ -3,9 +3,21 @@ console.log('') = imprimir texto
 let = declara variavel
 const = declara constante
 
+função = function(x,y){}
+objeto = objeto{objetox:... objetoy:...}
+`${}` = é usado para chamar uma função/objeto/variavel em uma string ***tem que ser com crase***
+
+
+
 atribuição = "="
 
 .tofixed() = arredonda o valor da variavel 
+
+
+
+
+
+
 
 "=" = atribuição
 "==" = igualdade ignorando o tipo 

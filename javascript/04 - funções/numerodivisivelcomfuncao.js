@@ -3,7 +3,7 @@
 
 function divisivel(numero,divisor){
     if (numero % divisor === 0){
-        console.log(numero + ' é divisivel por ' + divisor)
+        console.log(`${numero} é divisivel por ${divisor}`)
     }else if(numero % divisor !== 0){
         console.log(numero + ' não é divisivel por ' + divisor)
     }
