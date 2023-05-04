@@ -22,12 +22,9 @@ class pessoa {
 
 //como instanciar uma pessoa nova
 
-const fabricio = new pessoa(`Fabrício R Silva`, 21)
-const milena = new pessoa(`Milena Lugão`, 20)
-const jp = new pessoa('joao pedro', 21)
+const fabricio = new pessoa(`Fabrício R Silva`, 21);
+const milena = new pessoa(`Milena Lugão`, 20);
+const jp = new pessoa('Joao Pedro', 21);
 
-console.log(fabricio)
-console.log(milena)
-console.log(jp)
 
 
