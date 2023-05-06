@@ -1,0 +1,28 @@
+cliente solicita, servidor processa e devolve uma resposta
+primeiro instala o normalize pra ficar igual em todos os navegadores
+
+http = protocolo cliente servidor
+https = s de secure
+
+http-server ./ = abrir um server local 
+
+html = textual
+css = estilo do texto
+js = codigos
+
+h1 = titulo
+p = paragrafo
+
+document = trabalhar no meu codigo
+
+addEventListener = adicionar evento
+
+começa no css mobile 
+ul = lista nao ordenada
+ol = lista ordenada
+rem = baseado no tamanho da fonte
+
+li = list item (fica dentro da lista (ul or ol))
+
+class = cria classe para poder dar estilo só pra ela
+display = tipo de exibição de um elemento

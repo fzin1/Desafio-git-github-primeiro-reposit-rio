@@ -1,0 +1,103 @@
+.pokemons {
+    display: grid;
+    /*    display do tipo grade     */
+    grid-template-columns: 1fr;
+    /*    divisão das colunas     */
+    list-style: none;
+    /*    estilo de lista     */
+    padding: 0;
+    margin: 0;
+}
+.pokemon {
+
+    display: flex;
+    /*    deixa tudo flexivel     */
+    flex-direction: column;
+    /*    um item fica em cima do outro     */
+    padding: 1rem 1rem;
+    /*    preenchimento 2cima/baixo e 1esqueda/direita     */
+    margin: 0.5rem;
+    /*    tamanho da margem     */
+    background-color: #49d0b0;
+    /*    cor do fundo     */
+    color: white;
+    /*    cor da fonte     */
+    border-radius: 1rem;
+    /*    arredondamento da borda     */
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.486);
+    /*    coloca sombra no objeto     */
+}
+
+
+.pokemon .detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*    centralizar eles     */
+    justify-content: space-between;
+    /*    dar um espaço entre eles     */
+
+}
+
+
+.pokemon .detail .types {
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pokemon .detail .type {
+
+    background-color: #61e1ea;
+    color: white;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: 0.625rem;
+    border-radius: 5rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.285);
+}
+
+
+.pokemon .detail img {
+
+    max-width: 100%;
+    /*    largura imagem     */
+    height: 70px;
+    /*    altura imagem     */
+
+}
+
+.pokemon .number {
+
+    color: #2ea186;
+    text-align: right;
+    margin-bottom: 0;
+    font-size: 0.8rem;
+}
+
+.pokemon .name {
+
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.285);
+}
+
+@media screen and (min-width: 380px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 1rem;
+
+    }
+}
