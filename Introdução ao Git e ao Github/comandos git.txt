@@ -26,6 +26,8 @@
 
 - git remote rename "nome atual" "novo nome" = alterar o nome do repositorio
 
+- git rm = "excluir arquivo"
+
 
 - touch - cria arquivo novo no diretorio
 
