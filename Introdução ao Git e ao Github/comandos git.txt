@@ -41,4 +41,7 @@
   >
   > arquivo .md = markdown
   >
-  > flag "-a" = mostra arquivos ocultos
+  > flag "-m" = adicionar uma mensagem
+  >
+  > flag "-a" = commitar varios arquivos de uma vez
+  
