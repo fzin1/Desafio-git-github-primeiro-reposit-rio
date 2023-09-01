@@ -30,6 +30,8 @@
 
 - git checkout = "cancela as alterações"
 
+- git ignore = "ignora itens dentro da pasta"
+
 - touch - cria arquivo novo no diretorio
 
 - mkdir = criar diretorio
