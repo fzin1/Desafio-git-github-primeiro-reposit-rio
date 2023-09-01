@@ -28,6 +28,7 @@
 
 - git rm = "excluir arquivo"
 
+- git checkout = "cancela as alterações"
 
 - touch - cria arquivo novo no diretorio
 
