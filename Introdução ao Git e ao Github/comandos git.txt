@@ -32,6 +32,8 @@
 
 - git ignore = "ignora itens dentro da pasta"
 
+- git reset --hard = "reseta uma branch"
+
 - touch - cria arquivo novo no diretorio
 
 - mkdir = criar diretorio
