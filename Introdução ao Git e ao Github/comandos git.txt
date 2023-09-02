@@ -34,6 +34,16 @@
 
 - git reset --hard = "reseta uma branch"
 
+- git branch = mostra as branchs existentes
+
+- git branch <nome> = cria uma branch nova
+
+- git branch -d <nome> = deleta o branch
+
+- git checkout <nome da branch> = muda pra essa branch
+
+- git checkout -b <nome> = muda e cria uma branch
+
 - touch - cria arquivo novo no diretorio
 
 - mkdir = criar diretorio
