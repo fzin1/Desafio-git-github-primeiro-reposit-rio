@@ -40,9 +40,30 @@
 
 - git branch -d <nome> = deleta o branch
 
-- git checkout <nome da branch> = muda pra essa branch
+- git checkout <nome da branch> = muda pra essa branch ou tag
 
 - git checkout -b <nome> = muda e cria uma branch
+
+- git merge <nome da branch> = puxar as atualizações daquela branch 
+
+- git stash = tira tudo que vc fez e volta pro ponto de clonagem
+
+- git stash list = mostra tudo que vc apagou
+
+- git stash apply <numero dela> = volta pro codigo 
+
+- git stash show -p <numero dea> = mostra exatamente oq modificou
+
+- git stash clear = limpa tudas stashs
+
+- git stash drop <numero> = deleta stash especifico
+
+- git tag -a <nome da tag> -m <mensagem sobre ela> = basicamente uma branch de uma branch
+
+- git push origin --tags
+
+- da pra dar push em tags tbm
+
 
 - touch - cria arquivo novo no diretorio
 
