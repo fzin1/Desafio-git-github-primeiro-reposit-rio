@@ -4,6 +4,8 @@
 
 #### Alguns comandos:
 
+Basico Git
+
 - git init = iniciar repositorio
 
 - git add "nome do arquivo" = coloca o arquivo em staged      *tem que estar em staged pra commitar*
@@ -28,19 +30,22 @@
 
 - git remote rm = deleta o repositorio
 
-- git submodule add = criar um novo submodulo
-
-- git submodule = ver os submodulos
-
-- git push --recurse-submodules=on-demand = envia atualizações pro submodulo
-
 - git rm = "excluir arquivo"
 
 - git checkout = "cancela as alterações"
 
 - git ignore = "ignora itens dentro da pasta"
 
-- git reset --hard = "reseta uma branch"
+-------------------------------------------------------------------------------------------------
+ ## Submodule
+
+- git submodule add = criar um novo submodulo
+
+- git submodule = ver os submodulos
+
+- git push --recurse-submodules=on-demand = envia atualizações pro submodulo
+-------------------------------------------------------------------------------------------------
+## Branch
 
 - git branch = mostra as branchs existentes
 
@@ -52,7 +57,16 @@
 
 - git checkout -b <nome> = muda e cria uma branch
 
+- git reset --hard = "reseta uma branch"
+
 - git merge <nome da branch> = puxar as atualizações daquela branch 
+
+- git fetch -a = puxa todos os branchs de outros devs
+
+- git show = mostra as modificações feitas na branch/tags
+
+-------------------------------------------------------------------------------------------------
+## Stash
 
 - git stash = tira tudo que vc fez e volta pro ponto de clonagem
 
@@ -70,21 +84,36 @@
 
 - git push origin --tags
 
-- git fetch -a = puxa todos os branchs de outros devs
+-------------------------------------------------------------------------------------------------
+## log
+
+- git shortlog = um log resumido do repositorio
+
+- git reflog = um log completo sobre tudo feito no repositorio
+
+- git reset --hard <código hash> = reseta até o momento da hash 
+
+-------------------------------------------------------------------------------------------------
+## Optimização
+
+- git clean = limpa arquivos desnecessarios que não foram add
+
+- git gc = limpa arquivos desnecessarios automaticamente
+
+- git fsck = garante a integridade dos arquivos
+
+- git archive --gormat zip --output <nome do arquivo>.zip master = compacta o repo caso seja necessario levar para algum lugar
+
+-------------------------------------------------------------------------------------------------
+
+## OBS
 
 - da pra dar push em tags tbm
-
-
 - touch - cria arquivo novo no diretorio
-
 - mkdir = criar diretorio
-
 - ls = list
-
 - cd .. = voltar 1 diretório
-
 - mv = mover
-
   > ./ = dentro do repositorio que estamos
   >
   > arquivo .md = markdown
