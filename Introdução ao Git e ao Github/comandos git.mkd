@@ -2,9 +2,9 @@
 
 
 
-#### Alguns comandos:
+# Alguns comandos:
 
-Basico Git
+## Basico Git
 
 - git init = iniciar repositorio
 
@@ -114,11 +114,8 @@ Basico Git
 - ls = list
 - cd .. = voltar 1 diretório
 - mv = mover
-  > ./ = dentro do repositorio que estamos
-  >
-  > arquivo .md = markdown
-  >
-  > flag "-m" = adicionar uma mensagem
-  >
-  > flag "-a" = commitar varios arquivos de uma vez
+- ./ = dentro do repositorio que estamos
+- arquivo .md = markdown
+- flag "-m" = adicionar uma mensagem
+- flag "-a" = commitar varios arquivos de uma vez
   
