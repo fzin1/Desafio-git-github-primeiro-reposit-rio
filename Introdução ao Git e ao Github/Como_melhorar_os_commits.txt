@@ -1,0 +1,14 @@
+1. Crio uma branch 
+2. Crio a mesma branch com o nome "Privacy" na frente
+3. nessa branch privacy eu posso commitar de qualquer forma
+4. quando terminar os commits na privacy volto pra branch que quer organizada
+5. git rebase <branch atual> <branch bagunçada> -i 
+6. clico em "i" pra poder modificar
+7. coloco "squash" pro que quero deletar e "reword" pro que quero mudar o nome do commit
+8. coloco a # na frente dos que quero excluir
+9. escrevo "x!" para salvar
+
+
+
+-i = interativo
+x! = salvar
