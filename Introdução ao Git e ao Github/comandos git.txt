@@ -26,6 +26,14 @@
 
 - git remote rename "nome atual" "novo nome" = alterar o nome do repositorio
 
+- git remote rm = deleta o repositorio
+
+- git submodule add = criar um novo submodulo
+
+- git submodule = ver os submodulos
+
+- git push --recurse-submodules=on-demand = envia atualizações pro submodulo
+
 - git rm = "excluir arquivo"
 
 - git checkout = "cancela as alterações"
@@ -61,6 +69,8 @@
 - git tag -a <nome da tag> -m <mensagem sobre ela> = basicamente uma branch de uma branch
 
 - git push origin --tags
+
+- git fetch -a = puxa todos os branchs de outros devs
 
 - da pra dar push em tags tbm
 
