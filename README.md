@@ -7,4 +7,16 @@ Primeiro repositório Git/github
 
 [Sintaxe básica Markdown](https://www.markdownguide.org/basic-syntax/)
 
+### Imagens
+
 [![Joinha](img/joia.png)](https://jogostorrents.site)
+
+### Código de função
+
+```javascript
+    function soma(a,b){
+        return a + b;
+    }
+´´´
+
+
