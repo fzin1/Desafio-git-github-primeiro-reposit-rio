@@ -119,9 +119,4 @@
 - flag "-m" = adicionar uma mensagem
 - flag "-a" = commitar varios arquivos de uma vez
 
-sdfasas
-adada
-asdada
-fdffg
-
   
