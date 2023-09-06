@@ -7,5 +7,5 @@ Primeiro repositório Git/github
 
 [Sintaxe básica Markdown](https://www.markdownguide.org/basic-syntax/)
 
-![Joinha](img/joia.png)
+![Joinha](img/face.png)
 
