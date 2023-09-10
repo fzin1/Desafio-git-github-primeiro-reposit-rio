@@ -1,0 +1,37 @@
+Docker é um software que reduz a complexidade de setup configurando containers que são como servidores para rodar nossas aplicações
+
+
+# Comandos Docker
+
+## container
+
+**Um container Docker é um pacote de software com todas as dependências necessárias para executar um aplicativo específico**
+
+*    *comandos no terminal*
+
+- docker run "nome da imagem" = rodar a imagem
+- docker run -it "nome da imagem" = rodar e deixar rodando
+- docker ps = mostra o container q ta rodando
+- docker ps -a = mostra todos os containers
+- docler run -d container = rodar o container em segundo plano
+- docker stop "nome" = parar o container
+- docker run -d -p 3000:80 "nome da imagem" = exportar porta (primeira porta é a do meu pc e segunda é do container)
+- docker start "id" = inicia um container que ja foi usado
+- -- name "nome" = define um nome ex(docker run -d -p 80:80 --name nginx_app nginx) **coloque nomes objetivos**
+- docker logs "nome" = ver os problemas que aconteceram
+- docker rm "nome" = remove o container (**flag -f apaga um container ativo**)
+- 
+- 
+
+obs 
+
+- 2 click esquerdo + 1 click direito = copia e cola
+- comando **run** sempre cria um novo container
+- 
+- 
+
+## Imagens
+
+**Imagens são originadas de arquivos que programamos para que o docker crie uma estrutura que execute determinada ação em containers**
+
+*Ela contem informações como imagens, diretório, comandos e porta de aplicação*
