@@ -39,12 +39,15 @@ Docker é um software que reduz a complexidade de setup configurando containers 
 - docker volume prune = remove volumes q não estao sendo usados
 - docker run -v volume:/data:ro = criar volume somente de leitura
 - 
-- 
-- 
-- 
-- 
-- 
-- 
+****************************************************************************
+
+## Redes
+
+- docker network ls = mostrar as redes
+- docker network create "nome" = cria rede
+- docker network rm "id" = deleta
+- docker network crate -d "nome do driver" = cria em um driver especifico
+- docker network prune = remove varias redes nao usadas
 - 
 
 *****************************************************************************************
