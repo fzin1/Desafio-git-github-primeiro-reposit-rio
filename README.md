@@ -21,6 +21,6 @@ Primeiro repositório Git/github
 
 ### Lista de tarefas
 
-- [ x ] Tarefa feita
-- [  ] Tarefa não feita
+- [x] Tarefa feita
+- [ ] Tarefa não feita
 
