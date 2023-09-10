@@ -36,8 +36,8 @@ Docker é um software que reduz a complexidade de setup configurando containers 
 - docker run -v "nome":/data = criar um volume e salvar em data
 - docker volume ls = listar todos os volumes
 - docker volume inspect "nome do volume" = inspecionar o volume
-- 
-- 
+- docker volume prune = remove volumes q não estao sendo usados
+- docker run -v volume:/data:ro = criar volume somente de leitura
 - 
 - 
 - 
