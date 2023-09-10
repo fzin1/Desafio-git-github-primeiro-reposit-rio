@@ -1,3 +1,4 @@
+
 Docker é um software que reduz a complexidade de setup configurando containers que são como servidores para rodar nossas aplicações
 
 
@@ -20,6 +21,46 @@ Docker é um software que reduz a complexidade de setup configurando containers 
 - -- name "nome" = define um nome ex(docker run -d -p 80:80 --name nginx_app nginx) **coloque nomes objetivos**
 - docker logs "nome" = ver os problemas que aconteceram
 - docker rm "nome" = remove o container (**flag -f apaga um container ativo**)
+- docker image ls = listar imagens
+- docker rmi -f "id" = deletar imagem
+- docker tag "id" "nome" = nomear uma imagem 
+- docker tag "id" "nome:tag" = nomear uma tag
+- docker build -t novabuild:versao1.0 . = cria uma nova imagem na pasta q vc ta
+- docker start -i "imagem" = roda a imagem com terminal interativo 
+- docker pull = faz o download da imagem pro pc
+- docker system prune = apaga dados que nao estao sendo utilizados
+- docker run --rm = remove um container apos a utilização dele
+- docker cp "fonte" "destino" = copia o arquivo pra um destino selecionado
+- docker inspect "container" = ve as configurações do container
+- docker stats = ve o quanto o container ta gastando do pc
+- docker run -v "nome":/data = criar um volume e salvar em data
+- docker volume ls = listar todos os volumes
+- docker volume inspect "nome do volume" = inspecionar o volume
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+
+*****************************************************************************************
+
+*Como rodar uma imagem e salvar o conteudo num volume no diretorido do pc*
+
+- docker run -d -p 80:80 --name phpmessages_container -v "diretorio da pasta que eu quero salvar":"workdir do dockerfile" --rm phpmessages
+
+(exemplo: **docker run -d -p 80:80 --name phpmessages_container -v C:\Users\fabri\Desktop\docker\curso_docker\2_volumes\messages:/var/www/html/messages --rm phpmessages**)
+
+- se tirar da pasta messages e deixar no diretorio, você consegue atualizar o projeto em tempo real
+
+(exemplo: **docker run -d -p 80:80 --name phpmessages_container -v C:\Users\fabri\Desktop\docker\curso_docker\2_volumes\:/var/www/html/ --rm phpmessages**)
+
+******************************************************************************************
+
 - 
 - 
 
@@ -29,6 +70,8 @@ obs
 - comando **run** sempre cria um novo container
 - 
 - 
+
+****************************************************************************************************
 
 ## Imagens
 
