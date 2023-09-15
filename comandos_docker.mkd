@@ -48,6 +48,9 @@ Docker é um software que reduz a complexidade de setup configurando containers 
 - docker network rm "id" = deleta
 - docker network crate -d "nome do driver" = cria em um driver especifico
 - docker network prune = remove varias redes nao usadas
+- docker network connect "rede" = conecta a uma rede
+- docker network disconnect "rede" = desconecta
+- docker network inspect "rede" = inspeciona a rede
 - 
 
 *****************************************************************************************
