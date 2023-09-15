@@ -1,0 +1,26 @@
+## Comandos C
+
+### Aula String
+
+
+- scanf("%s") = lê só a primeira palavra de uma string caso tenha mais de uma
+- scanf("%[^\n]") = le toda a string e não só o primeiro nome
+
+*********************************************************************************************
+
+**biblioteca: string.h**
+
+- strcpy(x,"nome") = função de atribuição (atribui nome a variavel x)
+- strcat(x,y) = faz uma concatenação dos valores de x e y  (maximo de duas strings)
+- strncmp(x,y) = compara o primeiro caracter de duas strings
+- strcmp(x,y) = compara 2 strings
+
+
+
+*********************************************************************************************
+
+**biblioteca: locale.h**
+
+- setlocale(LC_ALL,"região")
+
+*********************************************************************************************
