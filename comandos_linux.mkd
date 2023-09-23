@@ -26,44 +26,133 @@ usermod -aG sudo seu_usuario**
 - sudo apt-get tree "nome do aplicativo" = deleta ele
 - sudo apt-get autoremove = limpa arquivos desnecessatios
 
-**da pra simplificar pra apt**
+!! = executa o ultimo comando
 
-- mkdir = cria pasta
-- rmdir = deleta
-- ls = listar
-- ctrl alt T = abre terminal
-- cd = se movimentar entre diretorios
-- cd - = me leva pro diretorio anterior
-- cd ~ = vai pra home
-- && = concatenar
-- ls -l = mostra os arquivos e pastas em detalhes
-- ls -a = mostra os ocultos
-- ls -lh = mostrar o tamanho nos detalhes
-- ls -ltr = data de modificação 
-- ls -lr = ver arquivo em ordem reversa
-- ls -R = ver as subpastas
-- ls -lS = ordena pelo tamanho 
-- ls -m = separa por virgula
-- ls --help
-- cat = ver oq tem dentro do arquivo
-- rm = deletar arquivo
-- cat -n = coloca linhas pra ver melhor o arquivo
-- cat "2 arquivos" > "nome de um novo arquivo" = transforma varios arquvivos em 1 só
-- cat "1 arquivo" >> "nome do arquivo" = concatena no arquivo
-- touch = cria arquivo ou atualiza a data de um existente
-- man "comando qualquer" = mostra o manual do comando
-- ctrl + R = busca comandos usados antigamente
-- mkdir -v = mostra oq ta acontecendo no terminal
-- mkdir -p dir1/dir2/dir3/dir4/dir5 = deixa eu criar varios diretorios um dentro do outro
-- rm -i = me pergunta se quero mesmo remover
-- cp "arquivo 1" "arquivo 2 ou diretorio" = copia arquivo pra dentro do destino
-- mv = mover
-- cp -r "diretorio"/* = copia tudo do diretorio pra um lugar especificado
-- pwd = mostra onde eu
-- sudo = usar permissões administrativas
-- 
-- 
-- 
-- 
-- 
-- 
+history = mostra os comandos utilizados
+
+**da pra simplificar pra apt**
+# Comandos básicos 
+
+    - mkdir = cria pasta
+    - rmdir = deleta
+    - ls = listar
+    - ctrl alt T = abre terminal
+    - cd = se movimentar entre diretorios
+    - cd - = me leva pro diretorio anterior
+    - cd ~ = vai pra home
+    - && = concatenar
+    - ls -l = mostra os arquivos e pastas em detalhes
+    - ls -a = mostra os ocultos
+    - ls -lh = mostrar o tamanho nos detalhes
+    - ls -ltr = data de modificação 
+    - ls -lr = ver arquivo em ordem reversa
+    - ls -R = ver as subpastas
+    - ls -lS = ordena pelo tamanho 
+    - ls -m = separa por virgula
+    - ls --help
+    - cat = ver oq tem dentro do arquivo
+    - rm = deletar arquivo
+    - cat -n = coloca linhas pra ver melhor o arquivo
+    - cat "2 arquivos" > "nome de um novo arquivo" = transforma varios arquvivos em 1 só
+    - cat "1 arquivo" >> "nome do arquivo" = concatena no arquivo
+    - touch = cria arquivo ou atualiza a data de um existente
+    - man "comando qualquer" = mostra o manual do comando
+    - ctrl + R = busca comandos usados antigamente
+    - mkdir -v = mostra oq ta acontecendo no terminal
+    - mkdir -p dir1/dir2/dir3/dir4/dir5 = deixa eu criar varios diretorios um dentro do outro
+    - rm -i = me pergunta se quero mesmo remover
+    - cp "arquivo 1" "arquivo 2 ou diretorio" = copia arquivo pra dentro do destino
+    - mv = mover
+    - cp -r "diretorio"/* = copia tudo do diretorio pra um lugar especificado
+    - pwd = mostra onde eu
+    - sudo = usar permissões administrativas
+
+    - head = ver as primeiras linhas do arquivo
+    - head -n 1 = ver só a primeira linha
+    - tail = ver as ultimas linhas 
+    - tail -n 1 = ver só a ultima
+    - tail -f  = usado para fazer debug de logs (altera em tempo real o arquivo)
+    - grep 'palavra que quer achar' = ele mostra a palavra 
+    - grep -i 'palavra que quer achar' = ele mostra a palavra independente de letra maiuscula
+    - grep -c = mostrar quantas vezes ocorreu
+    - grep 'palavra' -r = acha a palavra em qualquer arquivo 
+    - find -name "nome do arquivo" = ele mostra onde ta o arquivo a partir do diretorio atual
+    - find -iname "nome do arquivo" = ignora as letras maiusculas
+    **serve pra diretorios tbm**
+    - find -empty = acha arquivos e diretorios vazios
+    - find -empty -f = acha files
+    - find -empty -d = acha diretorios
+
+----------------------------------------------------------------------------
+
+## usuarios
+
+    - sudo adduser "nome do usuario" = cria usuario
+    - sudo userdel --remove "nome do usuario" = remove usuario
+    - sudo usermod -l "nome novo" -d /home/"nome novo" -m "nome antigo = troca o nome do usuario
+    - sudo usermod -L "usuario" = bloqueia o usuario
+    - sudo usermod -U "usuario" = desbloqueia usuario
+    - sudo groupadd -g "numero" "nome" = cria grupo
+    - sudo groupdel "nome" = deleta o grupo
+    - sudo usermod -a -G "grupo" "nome do usuario" = move o usuario para tal grupo
+    - sudo gpasswd -d "usuario" "grupo" = remove do grupo
+    - getent group = ve todos os grupos
+    - sudo su = vira um super usuario
+    - passwd = troca a senha do usuario atual 
+
+## compactar e descompactar arquivos
+
+    - tar -czvf "nome".tar.gz "nome do arquivo/diretorio" = compacta 
+    - tar -xzvf "nome do arquivo" = descompacta na pasta atual
+    - tar -xzvf "nome do arquivo" -c "nome do diretorio" = descompacta em outro diretorio
+    - zip -r "nome do zip" "arquivo"= compacta em zip
+    - unzip "nome do arquivo" = descompacta
+    - unzip "nome do arquivo" -d "diretorio" = escolhe onde descompacata
+    - tar -tvf "nome do arquivo" = ve oq tem dentro sem descompactar
+
+
+## redes
+
+    DNS = domain name system
+    **traduz o endereço de IP em um dominio**
+
+    TCP/UDP = protocolos de transferencia de dados
+
+    TCP = tansmission control protocol
+    **protocolo utilizado para transmissão de daodos pela rede**
+    **fofo na segurança dos dados**
+
+    - SMTP (envio de emails)
+    - FTP (trnasferencia de arquivos)
+    - HTTP (protocolo para navegar na internet)
+
+    UDP = User datagram protocol
+    **foco na velocidade**
+    *geralmente usados para jogos online*
+### comandos
+ - ping
+ - netstat
+ - netstat -t = tcp
+ - netstat -u = udp
+ - ifconfig
+ - nslookup "dns" = ver o ip atraves do dns
+ - tcpdump = ver conexoes tcp ativas
+ - hostname -I = ver o nosso ip
+
+## Permissões
+
+ - chmod xxx "file/dir" = altera a permissão do arquivo/diretorio
+
+    xxx = owner, grupo, demais
+
+    0 = sem permissão
+    1 = executar 
+    2 = escrever
+    3 = escrever e executar
+    4 = ler
+    5 = ler e executar 
+    6 = ler e escrever
+    7 = ler, escrever e executar
+
+        ex: 1 = --x
+            7 = rwx 
