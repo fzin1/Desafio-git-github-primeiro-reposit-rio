@@ -67,15 +67,11 @@ Docker é um software que reduz a complexidade de setup configurando containers 
 
 ******************************************************************************************
 
-- 
-- 
-
 obs 
 
 - 2 click esquerdo + 1 click direito = copia e cola
 - comando **run** sempre cria um novo container
-- 
-- 
+
 
 ****************************************************************************************************
 
