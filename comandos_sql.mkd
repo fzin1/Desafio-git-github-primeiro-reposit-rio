@@ -1,0 +1,41 @@
+# Comandos SQL:
+
+- SELECT: Seleciona colunas na tabela.
+- FROM: Seleciona de qual tabela quer tirar as colunas.
+- DISTINCT: Remove linhas duplicadas.
+- WHERE: Define uma condição (usando 'AND' ou 'OR') para filtrar os resultados.
+- ORDER BY: Ordena os resultados com base em uma coluna, com opções de ordem crescente ('ASC') ou decrescente ('DESC').
+- LIMIT: Limita o número de linhas retornadas.
+
+## Comandos para dar alias (nome) às colunas:
+
+- AS: Usado para renomear ou dar um nome mais legível às colunas em uma consulta.
+
+## Tipos de Operadores Aritméticos:
+
+- +: Adição.
+- -: Subtração.
+- *: Multiplicação.
+- /: Divisão.
+- ^: Exponenciação.
+- %: Módulo (resto da divisão).
+- ||: Concatenação de strings (não é um operador aritmético).
+
+## Tipos de Operadores de Comparação:
+- =: Igual a.
+- >: Maior que.
+- <: Menor que.
+- >=: Maior ou igual a.
+- <=: Menor ou igual a.
+- <>: Diferente de.
+
+## Operadores Lógicos:
+
+- AND: Verifica se duas condições são simultaneamente verdadeiras.
+- OR: Verifica se pelo menos uma de duas condições é verdadeira.
+- BETWEEN: Verifica se um valor está dentro de um intervalo definido.
+- IN: Funciona como múltiplos ORs, verificando se um valor está em uma lista de valores.
+- LIKE e ILIKE: Usados para comparar strings com um operador de curinga '%' (qualquer texto pode aparecer no lugar do curinga). O ILIKE ignora maiúsculas e minúsculas na comparação.
+- IS NULL: Verifica se um campo é nulo.
+
+# Estas são algumas operações fundamentais no SQL. Você pode usar esses comandos e operadores para criar consultas mais complexas e específicas em seu banco de dados.
