@@ -39,3 +39,135 @@
 - IS NULL: Verifica se um campo é nulo.
 
 # Estas são algumas operações fundamentais no SQL. Você pode usar esses comandos e operadores para criar consultas mais complexas e específicas em seu banco de dados.
+
+
+-- TIPOS DE FUNÇÕES AGREGADAS ######################################################
+
+-- COUNT()
+-- SUM()
+-- MIN()
+-- MAX()
+-- AVG()
+-- GROUP BY
+-- HAVIND = where mas pode ser usado com função
+
+-- TIPOS DE joins ######################################################
+
+- left join
+- inner join
+- right join
+- full join
+
+-- TIPOS DE subquery ######################################################
+
+where
+with
+from
+select
+
+with = tipo criar uma função
+
+operadores de conversão
+
+:: numeric
+:: text
+:: date
+
+se o :: nao funcionar usa o:
+
+cast = cast("texto que quer mudar" as "tipo")
+
+tratamentos de dados gerais xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+case
+    when ..... then
+
+coalesce ("se nao for nulo pega esse","se o primeiro for nulo pega esse")
+
+tratamento de texto 
+
+-- (1) LOWER() é utilizado para transformar todo texto em letras minúsculas
+-- (2) UPPER() é utilizado para transformar todo texto em letras maiúsculas
+-- (3) TRIM() é utilizado para remover os espaços das extremidades de um texto
+-- (4) REPLACE() é utilizado para substituir uma string por outra string
+
+tratamento de datas
+
+-- (1) O comando INTERVAL é utilizado para somar datas na unidade desejada. Caso a 
+-- unidade não seja informada, o SQL irá entender que a soma foi feita em dias.
+
+-- (2) O comando DATE_TRUNC é utilizado para truncar uma data no início do período
+
+-- (3) O comando EXTRACT é utilizado para extrair unidades de uma data/timestamp
+
+-- (4) O cálculo da diferença entre datas com o operador de subtração (-) retorna  
+-- valores em dias. Para calcular a diferença entre datas em outra unidade é necessário
+-- fazer uma transformação de unidades (ou criar uma função para isso)
+
+-- (5) Utilize o Guia de comandos para consultar as unidades de data e hora utilizadas 
+-- no SQL
+
+criando função em sql
+
+create function datediff(unidade varchar, data_inicial date, data_final date)
+returns integer
+language sql
+
+as
+
+$$
+
+	select
+		case
+			when unidade in ('d', 'day', 'days') then (data_final - data_inicial)
+			when unidade in ('w', 'week', 'weeks') then (data_final - data_inicial)/7
+			when unidade in ('m', 'month', 'months') then (data_final - data_inicial)/30
+			when unidade in ('y', 'year', 'years') then (data_final - data_inicial)/365
+			end as diferenca
+
+$$
+
+select datediff('years', '2021-02-04', current_date)
+
+## criação de tabela
+
+-- (1) Para criar tabelas a partir de uma query basta escrever a query normalmente e
+-- colocar o comando INTO antes do FROM informando o schema e o nome da tabela 
+-- a ser criada
+
+-- (2) Para criar tabelas a partir do zero é necessário (a) criar uma tabela vazia 
+-- com o comando CREATE TABLE (b) Informar que valores serão inseridos com o comando
+-- INSERT INTO seguido do nome das colunas (c) Inserir os valores manualmente em forma 
+-- de lista após o comando VALUES
+
+-- (3) Para deletar uma tabela utiliza-se o comando DROP TABLE
+
+## atualização de tabela linhas
+
+-- (1) Para inserir linhas em uma tabela é necessário (a) Informar que valores serão 
+-- inseridos com o comando INSERT INTO seguido do nome da tabela e nome das colunas 
+
+-- (b) Inserir os valores manualmente em forma de lista após o comando VALUES
+
+-- (2) Para atualizar as linhas de uma tabela é necessário (a) Informar qual tabela
+-- será atualizada com o comando UPDATE (b) Informar qual o novo valor com o comando SET 
+
+-- (c) Delimitar qual linha será modificada utilizando o filtro WHERE
+
+-- (3) Para deletar linhas de uma tabela é necessário (a) Informar de qual tabela as
+-- linhas serão deletadas com o comando DELETE FROM (b) Delimitar qual linha será 
+-- deletada utilizando o filtro WHERE
+
+## atualização de tabela linhas colunas
+
+-- (1) Para fazer qualquer modificação nas colunas de uma tabela utiliza-se o comando 
+-- ALTER TABLE seguido do nome da tabela
+
+-- (2) Para adicionar colunas utiliza-se o comando ADD seguido do nome da coluna e da
+-- unidade da nova coluna
+
+-- (3) Para mudar o tipo de unidade de uma coluna utiliza-se o comando ALTER COLUMN 
+
+-- (4) Para renomear uma coluna utiliza-se o comando RENAME COLUMN
+
+-- (5) Para deletar uma coluna utiliza-se o comando DROP COLUMN
