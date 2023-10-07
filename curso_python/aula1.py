@@ -17,7 +17,7 @@ print('Fabricio \"Ramos') # a \ é um caracter de escape, ele ignora a ação do
 
 # 1**2 = 1 ao quadrado
 
-string = f'teste {teste:.2f} teste' # fstring oq ta entre chaves vira variavel
+#string = f'teste {teste:.2f} teste' # fstring oq ta entre chaves vira variavel
 #:.2f = quantas casas decimais
 
 a = 'AAAAA'
