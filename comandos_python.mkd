@@ -1,0 +1,84 @@
+## Comandos para python
+
+## dicas
+
+- x**y = x elevado a y
+- :.2f = quantas casas decimais
+- a função len retorna a qtd de caracteres da str
+- 
+
+
+### print()
+
+print(12,34,56,78, sep='-', end=' :)\n')
+print(20,21,22,23, sep='-', end=' :)\n')
+print('oi', sep='-', end=' :)\n')
+
+#### sep = separador
+#### end = como vai terminar o seu print (\n é o padrao)
+
+### input()
+
+input = coletar dados do usuario
+
+o ideal é colocar o input em uma variavel
+ex:   entrada = input('Você quer "entrar" ou "sair"? ')
+
+### string (str)
+
+strings são vetores
+
+string = f'teste {teste:.2f} teste' # fstring oq ta entre chaves vira variavel
+
+### if
+
+ if/elif/else 
+
+ex:
+     
+         valor_1 = input()
+     valor_2 = input()
+     
+     if (valor_1 > valor_2):
+         print(f'{valor_1} é maior que o {valor_2}')
+         
+     elif (valor_2 > valor_1):
+         
+         print(f'{valor_2} é maior que o {valor_1}')
+     else:
+         print(f'{valor_1} e {valor_2} são iguais')
+
+### Operadores in e not in
+
+Strings são iteráveis
+
+ 0 1 2 3 4 5
+ O t á v i o
+-6-5-4-3-2-1
+
+    nome = 'Otávio'
+    print(nome[2]) 
+    print(nome[-4])
+    print('vio' in nome)
+    print('zero' in nome)
+    print(10 * '-')
+    print('vio' not in nome)
+    print('zero' not in nome)
+
+ex de in:
+
+    nome = input('Digite seu nome: ')
+    encontrar = input('Digite o que deseja encontrar: ')
+
+    if encontrar in nome:
+        print(f'{encontrar} está em {nome}')
+    else:
+        print(f'{encontrar} não está em {nome}')
+ 
+
+### Fatiamento de strings
+
+Fatiamento [i:f:p] [::] <i = inicio, f = fim, p = partição>
+
+variavel = 'Olá mundo'
+print(variavel[::-1])
