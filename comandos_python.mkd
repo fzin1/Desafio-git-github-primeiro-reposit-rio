@@ -30,7 +30,7 @@ strings são vetores
 
 string = f'teste {teste:.2f} teste' # fstring oq ta entre chaves vira variavel
 
-### if
+### if (se)
 
  if/elif/else 
 
@@ -82,3 +82,76 @@ Fatiamento [i:f:p] [::] <i = inicio, f = fim, p = partição>
 
 variavel = 'Olá mundo'
 print(variavel[::-1])
+
+### While (enquanto)
+
+while condição:
+
+    break: para o while
+    continue: ignora o restante do codigo
+
+### for (para)
+    texto = 'python'
+
+for letra in texto:
+    print(letra)
+
+### Range 
+
+    range(start,stop,step)
+
+### list
+[] = cria lista
+
+Métodos úteis:
+    append() - Adiciona um item ao final
+    insert(x,y) - Adiciona um item no índice escolhido
+    pop() - Remove do final ou do índice escolhido
+    del() - apaga um índice
+    clear() - limpa a lista
+    extend() - estende a lista
+    copy()
+    + - concatena listas
+
+### tuplas
+
+lista imutaveis
+
+### round
+
+round("valor", "quantas casas decimais")
+
+### split e join
+
+split("pode passar o caracter de divisão")
+'separador'.join("item que quer unir")
+
+    """
+    split e join com list e str
+    split - divide uma string (list)
+    join - une uma string
+    """
+    frase = '   Olha só que   , coisa interessante          '
+    lista_frases_cruas = frase.split(',')
+
+    lista_frases = []
+    for i, frase in enumerate(lista_frases_cruas):
+        lista_frases.append(lista_frases_cruas[i].strip())
+
+    # print(lista_frases_cruas)
+    # print(lista_frases)
+    frases_unidas = ', '.join(lista_frases)
+    print(frases_unidas)
+
+### obs
+
+print(*lista) = ele passa por todos os itens da lista 
+
+### operação ternária
+
+<valor> if <condição> else <outro valor>
+
+
+### random
+
+random.randint() = gera numeros inteiros randomicamente
