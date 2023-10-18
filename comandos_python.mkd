@@ -155,3 +155,5 @@ print(*lista) = ele passa por todos os itens da lista
 ### random
 
 random.randint() = gera numeros inteiros randomicamente
+
+### .replace('item que quer tirar' , 'item que vai substituir')
