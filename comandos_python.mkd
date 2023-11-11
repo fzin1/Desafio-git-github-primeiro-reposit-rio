@@ -5,7 +5,10 @@
 - x**y = x elevado a y
 - :.2f = quantas casas decimais
 - a função len retorna a qtd de caracteres da str
-- 
+- .sort() = ordena
+- .sort(reverse = true) = ordena ao contrario
+- .isdigit(valor) = ve se é um digito
+- .isinstance(valor,type) = ve se é daquele type
 
 
 ### print()
@@ -157,3 +160,168 @@ print(*lista) = ele passa por todos os itens da lista
 random.randint() = gera numeros inteiros randomicamente
 
 ### .replace('item que quer tirar' , 'item que vai substituir')
+
+
+### função
+
+def nome()
+
+<!-- Higher Order Functions - Funções que podem receber e/ou retornar outras funções
+
+First-Class Functions - Funções que são tratadas como outros tipos de dados comuns (strings, inteiros, etc...) -->
+
+### empacoamento
+<!-- vai salvar ultimos 2 digitos na variavel resto -->
+x, y, *resto = 1, 2, 3, 4 
+print(x,y, resto)
+
+*variavel
+
+### função soma
+
+sum()
+
+### closure
+
+
+
+### dict
+
+pessoa = {
+    'chave': 'valor'
+    nome : 'valor'
+}
+
+print(pessoa['chave']) 
+
+if pessoa.get() is none 
+
+# Métodos úteis dos dicionários em Python
+# len - quantas chaves
+# keys - iterável com as chaves
+# values - iterável com os valores
+# items - iterável com chaves e valores
+# setdefault - adiciona valor se a chave não existe
+# copy - retorna uma cópia rasa (shallow copy)
+# get - obtém uma chave
+# pop - Apaga um item com a chave especificada (del)
+# popitem - Apaga o último item adicionado
+# update - Atualiza um dicionário com outro
+pessoa = {
+    'nome': 'Luiz Otávio',
+    'sobrenome': 'Miranda',
+    'idade': 900,
+}
+
+dict1 = {}
+dict2 = {}
+
+<!-- para juntar os dois em um só -->
+dict3 = **dict1, **dict2
+
+pessoa.setdefault('idade', 0)
+print(pessoa['idade'])
+
+# print(len(pessoa))
+# print(list(pessoa.keys()))
+# print(list(pessoa.values()))
+# print(list(pessoa.items()))
+
+# for valor in pessoa.values():
+#     print(valor)
+
+# for chave, valor in pessoa.items():
+#     print(chave, valor)
+
+<!-- deep copy -->
+
+### set 
+
+set = conjunto
+
+set() ou {1,2,3} (sem chave e valor, só valor)
+
+metodos 
+. add
+. update
+. clear
+. discard
+
+s3 = s1 | s2 união
+s3 = s1 & s2 interseção
+s3 = s2 - s1 diferença
+s3 = s1 ^ s2 diferença simetrica
+
+### função lambda 
+
+1 linha e sem nome
+
+lambda item: item['nome']
+lambda = function
+item = argumento
+item = return
+
+**kwargs = nomeados
+*args = nao nomeados
+
+### list comprehension
+
+
+lista = []
+
+lista = [
+    numero * 2
+    for numero in range(10)
+]
+print(lista)
+
+mapeamento for filtro
+
+mais detalhes = https://youtu.be/1YbTDczvqco
+
+### iterator
+
+iter(next())
+
+### generator
+
+funções que sabem pausar
+serve para guardar listas grandes sem ocupar espaço na memoria
+
+lista = [n for n in range(1000000)]
+generator = (n for n in range(1000000))
+
+print(generator)
+
+# for n in generator:
+#     print(n)
+
+yield from = pega de um outro generator
+
+### try except finally 
+
+https://docs.python.org/pt-br/3/library/exceptions.html#built-in-exceptions
+try:
+    print('ABRIR ARQUIVO')
+    8/0
+except ZeroDivisionError as e:
+    print(e.__class__.__name__)
+    print(e)
+    print('DIVIDIU ZERO')
+except IndexError as error:
+    print('IndexError')
+except (NameError, ImportError):
+    print('NameError, ImportError')
+else:
+    print('Não deu erro')
+finally:
+    print('FECHAR ARQUIVO')
+
+### raise
+
+lançar erros e informar oq ta fazendo de errado
+
+### modulos
+
+modulos saõ singleton = só carregam uma vez 
+só carrega varias vezes se vc usar o modulo importlib.reload()
