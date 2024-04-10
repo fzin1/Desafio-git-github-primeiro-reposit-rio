@@ -170,7 +170,7 @@ def nome()
 
 First-Class Functions - Funções que são tratadas como outros tipos de dados comuns (strings, inteiros, etc...) -->
 
-### empacoamento
+### empacotamento
 <!-- vai salvar ultimos 2 digitos na variavel resto -->
 x, y, *resto = 1, 2, 3, 4 
 print(x,y, resto)
