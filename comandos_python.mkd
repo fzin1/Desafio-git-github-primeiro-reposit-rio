@@ -13,9 +13,9 @@
 
 ### print()
 
-print(12,34,56,78, sep='-', end=' :)\n')
-print(20,21,22,23, sep='-', end=' :)\n')
-print('oi', sep='-', end=' :)\n')
+print(12,34,56,78, sep='-', end=' :\n')
+print(20,21,22,23, sep='-', end=' :\n')
+print('oi', sep='-', end=' :\n')
 
 #### sep = separador
 #### end = como vai terminar o seu print (\n é o padrao)
@@ -31,7 +31,7 @@ ex:   entrada = input('Você quer "entrar" ou "sair"? ')
 
 strings são vetores
 
-string = f'teste {teste:.2f} teste' # fstring oq ta entre chaves vira variavel
+f string = f'teste {teste:.2f} teste' # fstring oq ta entre chaves vira variavel
 
 ### if (se)
 
@@ -325,3 +325,10 @@ lançar erros e informar oq ta fazendo de errado
 
 modulos saõ singleton = só carregam uma vez 
 só carrega varias vezes se vc usar o modulo importlib.reload()
+
+## 
+
+{chave:valor} = dict
+() = tuple
+[] = list
+{} = conjunto
