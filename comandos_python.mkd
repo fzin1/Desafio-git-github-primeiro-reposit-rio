@@ -33,6 +33,10 @@ strings são vetores
 
 f string = f'teste {teste:.2f} teste' # fstring oq ta entre chaves vira variavel
 
+.strip remove espaços em branco
+.center coloca no centro
+
+
 ### if (se)
 
  if/elif/else 
